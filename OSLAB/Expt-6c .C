@@ -3,20 +3,16 @@
    Title of the Experiment: OPTIMAL Replacement Algorithm
    Date of Creation: 29-11-2022
    Date of Execution: 29-11-2022
-*/
-* Program to simulate optimal page replacement */
+/* Program to simulate optimal page replacement */
 #include<stdio.h>
-#include<conio.h>
 int fr[3], n, m;
-void
-display();
 void main()
 {
+void display();
 int i,j,page[20],fs[10];
-int
-max,found=0,lg[3],index,k,l,flag1=0,flag2=0,pf=0;
+int max,found=0,lg[3],index,k,l,flag1=0,flag2=0,pf=0;
 float pr;
-clrscr();
+
 printf("Enter length of the reference string: ");
 scanf("%d",&n);
 printf("Enter the reference string: ");
@@ -92,11 +88,12 @@ display();
 }
 printf("Number of page faults : %d\n", pf);
 pr=(float)pf/n*100;
-printf("Page fault rate = %f \n", pr); getch();
+printf("Page fault rate = %f \n", pr);
 }
 void display()
 {
-int i; for(i=0;i<m;i++)
+int i; 
+for(i=0;i<m;i++)
 printf("%d\t",fr[i]);
 printf("\n");
 }
